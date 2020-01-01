@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Homework-10</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    
+<select id="first">
+    <option value="USD" selected>USD</option>
+    <option value="PLN" selected>PLN</option>
+    <option value="JPY" selected>JPY</option>
+    <option value="TRY" selected>TRY</option>
+  </select>
+  
+  <select id="last">
+    <option value="USD" selected>USD</option>
+    <option value="EUR" selected>EUR</option>
+    <option value="PLN" selected>PLN</option>
+    <option value="JPY" selected>JPY</option>
+  </select>
+  <input type="number" id="conv" onchange="convNumb()">
+  <button onclick="convNumb()">Converter</button>
+  <br />
+  <span>result: </span> <span id="result"></span>
+  
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>    
+    <script src="currency-converter.js"></script>
+</body>
+</html>
